@@ -4,12 +4,14 @@ import { RouterModule } from '@angular/router';
 import { from } from 'rxjs';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+//import { PayrollappComponent } from './payrollapp/payrollapp.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
+  //  PayrollappComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,11 +19,14 @@ import { UserComponent } from './user/user.component';
     RouterModule.forRoot([
     {
       path:'user',
-      component : UserComponent
-
+     component : UserComponent
+     
+      
     },
 
     ])
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
